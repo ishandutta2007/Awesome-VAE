@@ -24,36 +24,36 @@ A curated, high-quality collection of **Variational Autoencoder (VAE)** research
 ## 1. 🧩 Discrete & Token-Based VAEs
 These variants replace continuous probability distributions with discrete tokens, making them highly effective for data compression and serving as components for foundational AI models.
 
-*   **VQ-VAE (Vector Quantized VAE):** Maps continuous latent vectors to the nearest discrete vector in a learned "codebook". This prevents blurriness and posterior collapse, forming the tokenization backbone for generative architectures like DALL-E.
-*   **VQ-VAE-2:** A hierarchical upgrade to VQ-VAE that uses multi-scale codebooks (e.g., a top-level codebook for global shape and a bottom-level codebook for fine textures) to generate high-resolution data.
-*   **Gumbel-Softmax VAE:** Utilizes the Gumbel-Softmax distribution trick to backpropagate gradients through discrete latent variables without a fixed codebook, allowing the neural network to make categorical choices natively.
+*   **[VQ-VAE (Vector Quantized VAE)](variants/vq-vae.md):** Maps continuous latent vectors to the nearest discrete vector in a learned "codebook". This prevents blurriness and posterior collapse, forming the tokenization backbone for generative architectures like DALL-E.
+*   **[VQ-VAE-2](variants/vq-vae-2.md):** A hierarchical upgrade to VQ-VAE that uses multi-scale codebooks (e.g., a top-level codebook for global shape and a bottom-level codebook for fine textures) to generate high-resolution data.
+*   **[Gumbel-Softmax VAE](variants/gumbel-softmax-vae.md):** Utilizes the Gumbel-Softmax distribution trick to backpropagate gradients through discrete latent variables without a fixed codebook, allowing the neural network to make categorical choices natively.
 
 ---
 
 ## 2. ✨ Disentangled VAEs
 These models constrain individual dimensions of the latent space to represent distinct, independent physical features (e.g., face angle, lighting, or hair color).
 
-*   **$\beta$-VAE:** Introduces a hyperparameter ($\beta > 1$) to scale the Kullback-Leibler (KL) divergence loss. This prioritizes latent independence, trading off a small amount of reconstruction quality for highly interpretable features.
-*   **FactorVAE:** Disentangles features more effectively than $\beta$-VAE by directly penalizing the *Total Correlation* of the latent distribution using an auxiliary discriminator network.
-*   **$\beta$-TCVAE (Total Correlation VAE):** Achieves state-of-the-art disentanglement by mathematically breaking down the standard KL divergence equation, isolating the total correlation term without requiring an extra discriminator network.
+*   **[$\beta$-VAE](variants/beta-vae.md):** Introduces a hyperparameter ($\beta > 1$) to scale the Kullback-Leibler (KL) divergence loss. This prioritizes latent independence, trading off a small amount of reconstruction quality for highly interpretable features.
+*   **[FactorVAE](variants/factor-vae.md):** Disentangles features more effectively than $\beta$-VAE by directly penalizing the *Total Correlation* of the latent distribution using an auxiliary discriminator network.
+*   **[$\beta$-TCVAE (Total Correlation VAE)](variants/beta-tcvae.md):** Achieves state-of-the-art disentanglement by mathematically breaking down the standard KL divergence equation, isolating the total correlation term without requiring an extra discriminator network.
 
 ---
 
 ## 3. 🏗️ Structural & Hierarchical VAEs
 These variants modify the routing and depth of the latent space to capture complex, multi-layered data dependencies.
 
-*   **Conditional VAE (CVAE):** Feeds a label or condition (e.g., a specific digit class or text prompt) into both the encoder and decoder. This allows users to direct the model to generate a specific class of output.
-*   **Hierarchical VAE (HAE):** Stacks multiple latent layers sequentially. Lower layers capture coarse, global structures, while deeper layers capture fine, local details.
-*   **Nouveau VAE (NVAE):** A highly optimized, deep hierarchical VAE that uses depth-wise separable convolutions and residual cells to generate high-resolution continuous images that rival early GANs.
+*   **[Conditional VAE (CVAE)](variants/cvae.md):** Feeds a label or condition (e.g., a specific digit class or text prompt) into both the encoder and decoder. This allows users to direct the model to generate a specific class of output.
+*   **[Hierarchical VAE (HAE)](variants/hae.md):** Stacks multiple latent layers sequentially. Lower layers capture coarse, global structures, while deeper layers capture fine, local details.
+*   **[Nouveau VAE (NVAE)](variants/nvae.md):** A highly optimized, deep hierarchical VAE that uses depth-wise separable convolutions and residual cells to generate high-resolution continuous images that rival early GANs.
 
 ---
 
 ## 4. 🌀 Advanced Geometric & Flow VAEs
 These models replace traditional standard Gaussian distributions with more complex mathematical spaces or coordinate systems.
 
-*   **Normalizing Flow VAE:** Passes a simple standard Gaussian distribution through a series of invertible mathematical transformations (flows) to warp it into a highly complex, expressive probability shape.
-*   **Hyperspherical (von Mises-Fisher) VAE:** Maps latent variables onto the surface of a hypersphere instead of a flat hyper-plane, which is ideal for directional data like earth mapping or molecular orientation.
-*   **Graph VAE (GVAE):** Tailored to process non-Euclidean data by encoding and decoding node features and edge adjacency matrices. Commonly used for molecular generation and social network analysis.
+*   **[Normalizing Flow VAE](variants/flow-vae.md):** Passes a simple standard Gaussian distribution through a series of invertible mathematical transformations (flows) to warp it into a highly complex, expressive probability shape.
+*   **[Hyperspherical (von Mises-Fisher) VAE](variants/hyperspherical-vae.md):** Maps latent variables onto the surface of a hypersphere instead of a flat hyper-plane, which is ideal for directional data like earth mapping or molecular orientation.
+*   **[Graph VAE (GVAE)](variants/graph-vae.md):** Tailored to process non-Euclidean data by encoding and decoding node features and edge adjacency matrices. Commonly used for molecular generation and social network analysis.
 
 ---
 
