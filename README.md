@@ -1,24 +1,27 @@
-# Awesome-VAE
-## Comprehensive Guide to Variational Autoencoder (VAE) Variants
+# 🚀 Awesome-VAE: A Comprehensive Guide to Variational Autoencoder Variants
 
-[![License: MIT](https://shields.io)](https://opensource.org)
-[![PRs Welcome](https://shields.io)](http://makeapullrequest.com)
+![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-VAE?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/ishandutta2007/Awesome-VAE?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/ishandutta2007/Awesome-VAE?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/ishandutta2007/Awesome-VAE?style=flat-square)
+![GitHub license](https://img.shields.io/github/license/ishandutta2007/Awesome-VAE?style=flat-square)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
 
-A curated, structured overview of the major types of Variational Autoencoders (VAEs). This repository maps out the evolution of VAE architectures from standard continuous models to modern discrete, disentangled, and hierarchical variants.
+A curated, high-quality collection of **Variational Autoencoder (VAE)** research, architectures, and implementations. This repository maps out the evolution of VAE models in **machine learning**, **deep learning**, and **generative AI**—from standard continuous models to modern discrete, disentangled, and hierarchical variants like **VQ-VAE**, **Beta-VAE**, and **NVAE**.
 
 ---
 
 ## 📌 Table of Contents
-- [1. Discrete & Token-Based VAEs](#1-discrete--token-based-vaes)
-- [2. Disentangled VAEs](#2-disentangled-vaes)
-- [3. Structural & Hierarchical VAEs](#3-structural--hierarchical-vaes)
-- [4. Advanced Geometric & Flow VAEs](#4-advanced-geometric--flow-vaes)
+- [1. 🧩 Discrete & Token-Based VAEs](#1--discrete--token-based-vaes)
+- [2. ✨ Disentangled VAEs](#2--disentangled-vaes)
+- [3. 🏗️ Structural & Hierarchical VAEs](#3--structural--hierarchical-vaes)
+- [4. 🌀 Advanced Geometric & Flow VAEs](#4--advanced-geometric--flow-vaes)
 - [📊 Quick Comparison Matrix](#-quick-comparison-matrix)
 - [🤝 Contributing](#-contributing)
 
 ---
 
-## 1. Discrete & Token-Based VAEs
+## 1. 🧩 Discrete & Token-Based VAEs
 These variants replace continuous probability distributions with discrete tokens, making them highly effective for data compression and serving as components for foundational AI models.
 
 *   **VQ-VAE (Vector Quantized VAE):** Maps continuous latent vectors to the nearest discrete vector in a learned "codebook". This prevents blurriness and posterior collapse, forming the tokenization backbone for generative architectures like DALL-E.
@@ -27,7 +30,7 @@ These variants replace continuous probability distributions with discrete tokens
 
 ---
 
-## 2. Disentangled VAEs
+## 2. ✨ Disentangled VAEs
 These models constrain individual dimensions of the latent space to represent distinct, independent physical features (e.g., face angle, lighting, or hair color).
 
 *   **$\beta$-VAE:** Introduces a hyperparameter ($\beta > 1$) to scale the Kullback-Leibler (KL) divergence loss. This prioritizes latent independence, trading off a small amount of reconstruction quality for highly interpretable features.
@@ -36,7 +39,7 @@ These models constrain individual dimensions of the latent space to represent di
 
 ---
 
-## 3. Structural & Hierarchical VAEs
+## 3. 🏗️ Structural & Hierarchical VAEs
 These variants modify the routing and depth of the latent space to capture complex, multi-layered data dependencies.
 
 *   **Conditional VAE (CVAE):** Feeds a label or condition (e.g., a specific digit class or text prompt) into both the encoder and decoder. This allows users to direct the model to generate a specific class of output.
@@ -45,7 +48,7 @@ These variants modify the routing and depth of the latent space to capture compl
 
 ---
 
-## 4. Advanced Geometric & Flow VAEs
+## 4. 🌀 Advanced Geometric & Flow VAEs
 These models replace traditional standard Gaussian distributions with more complex mathematical spaces or coordinate systems.
 
 *   **Normalizing Flow VAE:** Passes a simple standard Gaussian distribution through a series of invertible mathematical transformations (flows) to warp it into a highly complex, expressive probability shape.
@@ -91,4 +94,7 @@ Contributions are welcome! If you would like to add a new VAE variant, include P
 
 
 ---
-License: [MIT](LICENSE)
+### 📜 License
+This project is licensed under the [MIT License](LICENSE).
+
+<!-- Keywords: Variational Autoencoder, VAE variants, Machine Learning, Deep Learning, Generative Models, Neural Networks, AI architectures, VQ-VAE, Beta-VAE, CVAE, NVAE, PyTorch, TensorFlow, Latent Space, Disentanglement, Hierarchical VAE, Normalizing Flows -->
