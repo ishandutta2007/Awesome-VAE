@@ -24,36 +24,44 @@ A curated, high-quality collection of **Variational Autoencoder (VAE)** research
 ## 1. 🧩 Discrete & Token-Based VAEs
 These variants replace continuous probability distributions with discrete tokens, making them highly effective for data compression and serving as components for foundational AI models.
 
-*   **[VQ-VAE (Vector Quantized VAE)](variants/vq-vae.md):** Maps continuous latent vectors to the nearest discrete vector in a learned "codebook". This prevents blurriness and posterior collapse, forming the tokenization backbone for generative architectures like DALL-E.
-*   **[VQ-VAE-2](variants/vq-vae-2.md):** A hierarchical upgrade to VQ-VAE that uses multi-scale codebooks (e.g., a top-level codebook for global shape and a bottom-level codebook for fine textures) to generate high-resolution data.
-*   **[Gumbel-Softmax VAE](variants/gumbel-softmax-vae.md):** Utilizes the Gumbel-Softmax distribution trick to backpropagate gradients through discrete latent variables without a fixed codebook, allowing the neural network to make categorical choices natively.
+| Variant | Key Mechanism | Year | Research Paper |
+| :--- | :--- | :--- | :--- |
+| **[VQ-VAE](variants/vq-vae.md)** | Discrete codebook mapping to prevent blurriness | 2017 | [DeepMind](https://arxiv.org/abs/1711.00937) |
+| **[VQ-VAE-2](variants/vq-vae-2.md)** | Multi-scale hierarchical discrete codebooks | 2019 | [DeepMind](https://arxiv.org/abs/1906.00446) |
+| **[Gumbel-Softmax VAE](variants/gumbel-softmax-vae.md)** | Differentiable categorical relaxation trick | 2016 | [Google Brain](https://arxiv.org/abs/1611.01144) |
 
 ---
 
 ## 2. ✨ Disentangled VAEs
 These models constrain individual dimensions of the latent space to represent distinct, independent physical features (e.g., face angle, lighting, or hair color).
 
-*   **[$\beta$-VAE](variants/beta-vae.md):** Introduces a hyperparameter ($\beta > 1$) to scale the Kullback-Leibler (KL) divergence loss. This prioritizes latent independence, trading off a small amount of reconstruction quality for highly interpretable features.
-*   **[FactorVAE](variants/factor-vae.md):** Disentangles features more effectively than $\beta$-VAE by directly penalizing the *Total Correlation* of the latent distribution using an auxiliary discriminator network.
-*   **[$\beta$-TCVAE (Total Correlation VAE)](variants/beta-tcvae.md):** Achieves state-of-the-art disentanglement by mathematically breaking down the standard KL divergence equation, isolating the total correlation term without requiring an extra discriminator network.
+| Variant | Disentanglement Strategy | Year | Research Paper |
+| :--- | :--- | :--- | :--- |
+| **[$\beta$-VAE](variants/beta-vae.md)** | Scaled KL-divergence penalty hyperparameter | 2017 | [DeepMind](https://openreview.net/forum?id=Sy2fzU9gl) |
+| **[FactorVAE](variants/factor-vae.md)** | Total Correlation penalty via discriminator | 2018 | [DeepMind](https://arxiv.org/abs/1802.05983) |
+| **[$\beta$-TCVAE](variants/beta-tcvae.md)** | ELBO decomposition targeting Total Correlation | 2018 | [MS Research](https://arxiv.org/abs/1802.04942) |
 
 ---
 
 ## 3. 🏗️ Structural & Hierarchical VAEs
 These variants modify the routing and depth of the latent space to capture complex, multi-layered data dependencies.
 
-*   **[Conditional VAE (CVAE)](variants/cvae.md):** Feeds a label or condition (e.g., a specific digit class or text prompt) into both the encoder and decoder. This allows users to direct the model to generate a specific class of output.
-*   **[Hierarchical VAE (HAE)](variants/hae.md):** Stacks multiple latent layers sequentially. Lower layers capture coarse, global structures, while deeper layers capture fine, local details.
-*   **[Nouveau VAE (NVAE)](variants/nvae.md):** A highly optimized, deep hierarchical VAE that uses depth-wise separable convolutions and residual cells to generate high-resolution continuous images that rival early GANs.
+| Variant | Architecture Modification | Year | Research Paper |
+| :--- | :--- | :--- | :--- |
+| **[Conditional VAE (CVAE)](variants/cvae.md)** | Latent conditioning on labels/metadata | 2015 | [NIPS 2015](https://proceedings.neurips.cc/paper/2015/hash/8d55a249e6baa5c06772297520da2051-Abstract.html) |
+| **[Hierarchical VAE (HAE)](variants/hae.md)** | Layered latent variable stacking (Ladder) | 2016 | [NIPS 2016](https://arxiv.org/abs/1602.02282) |
+| **[Nouveau VAE (NVAE)](variants/nvae.md)** | Deep residual hierarchical cells optimization | 2020 | [NVIDIA](https://arxiv.org/abs/2007.03898) |
 
 ---
 
 ## 4. 🌀 Advanced Geometric & Flow VAEs
 These models replace traditional standard Gaussian distributions with more complex mathematical spaces or coordinate systems.
 
-*   **[Normalizing Flow VAE](variants/flow-vae.md):** Passes a simple standard Gaussian distribution through a series of invertible mathematical transformations (flows) to warp it into a highly complex, expressive probability shape.
-*   **[Hyperspherical (von Mises-Fisher) VAE](variants/hyperspherical-vae.md):** Maps latent variables onto the surface of a hypersphere instead of a flat hyper-plane, which is ideal for directional data like earth mapping or molecular orientation.
-*   **[Graph VAE (GVAE)](variants/graph-vae.md):** Tailored to process non-Euclidean data by encoding and decoding node features and edge adjacency matrices. Commonly used for molecular generation and social network analysis.
+| Variant | Geometric/Probabilistic Space | Year | Research Paper |
+| :--- | :--- | :--- | :--- |
+| **[Normalizing Flow VAE](variants/flow-vae.md)** | Invertible transformation sequences (flows) | 2015 | [ICML 2015](https://arxiv.org/abs/1505.05770) |
+| **[Hyperspherical VAE](variants/hyperspherical-vae.md)** | Latent mapping to von Mises-Fisher surface | 2018 | [UvA](https://arxiv.org/abs/1804.00891) |
+| **[Graph VAE (GVAE)](variants/graph-vae.md)** | Non-Euclidean data/adjacency reconstruction | 2016 | [NIPS 2016](https://arxiv.org/abs/1611.07308) |
 
 ---
 
