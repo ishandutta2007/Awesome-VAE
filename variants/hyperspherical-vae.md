@@ -3,7 +3,7 @@
 The Hyperspherical VAE maps latent variables onto the surface of a hypersphere ($\mathcal{S}^n$) rather than a flat Euclidean space, using the von Mises-Fisher (vMF) distribution.
 
 ## 🏗️ Architecture Diagram
-![Hyperspherical VAE Concept](https://raw.githubusercontent.com/nicola-decao/s-vae/master/toy1.png)
+*(Diagram to be added)*
 
 ## 🔑 Key Features
 - **Non-Euclidean Latent Space:** Ideal for data with a directional or cyclical nature.

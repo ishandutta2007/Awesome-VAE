@@ -3,7 +3,7 @@
 Graph Variational Autoencoders are designed to process non-Euclidean data structured as graphs, learning to encode and reconstruct nodes and edges.
 
 ## 🏗️ Architecture Diagram
-![VGAE Architecture](https://miro.medium.com/v2/resize:fit:1400/1*8_8_8_8_8_8_8_8_8_8_8.png)
+*(Diagram to be added)*
 
 ## 🔑 Key Features
 - **Graph Convolutional Networks (GCN):** Uses GCNs as the encoder to capture local neighborhood information.

@@ -3,7 +3,7 @@
 $\beta$-VAE is a modification of the standard VAE framework that introduces a hyperparameter $\beta$ to control the emphasis on learning independent (disentangled) latent factors.
 
 ## 🏗️ Architecture Diagram
-![Beta-VAE Block Scheme](https://www.researchgate.net/profile/Leonardo-Crespi/publication/354123456/figure/fig1/AS:11431281234567168@1712640000000/A-block-scheme-of-the-beta-VAE.png)
+![Beta-VAE Block Scheme](../assets/images/vae.png)
 
 ## 🔑 Key Features
 - **Disentanglement:** By setting $\beta > 1$, the model is forced to prioritize the KL-divergence term, leading to a more compact and independent latent space.

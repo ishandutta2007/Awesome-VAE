@@ -3,7 +3,7 @@
 FactorVAE is designed to achieve better disentanglement than $\beta$-VAE by directly penalizing the Total Correlation (TC) of the latent distribution.
 
 ## 🏗️ Architecture Diagram
-![FactorVAE Architecture](https://www.researchgate.net/profile/Santiago-Jimenez/publication/341234567/figure/fig1/AS:11431281234567168@1712640000000/Architecture-of-the-FactorVAE.png)
+*(Diagram to be added)*
 
 ## 🔑 Key Features
 - **Total Correlation Penalty:** Adds a term to the loss function that minimizes the dependency between latent dimensions.

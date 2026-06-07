@@ -3,7 +3,7 @@
 CVAE is a type of VAE that allows for controlled data generation by conditioning the encoding and decoding processes on external information, such as class labels or text descriptions.
 
 ## 🏗️ Architecture Diagram
-![CVAE Architecture](https://www.researchgate.net/profile/Sushan-Nakarmi/publication/331234567/figure/fig1/AS:11431281234567168@1712640000000/Schematic-of-the-conditional-variational-autoencoder-cVAE.png)
+*(Diagram to be added)*
 
 ## 🔑 Key Features
 - **Targeted Generation:** By providing a label (e.g., "generate a digit 7"), the model can produce specific classes of output.

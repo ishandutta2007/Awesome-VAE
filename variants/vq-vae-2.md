@@ -3,8 +3,7 @@
 VQ-VAE-2 is a hierarchical extension of the original VQ-VAE, designed to generate high-resolution images by capturing both global structures and local details across multiple scales.
 
 ## 🏗️ Architecture Diagram
-*(Diagram available in the research paper below)*
-> [View Diagram in Paper (Figure 2)](https://arxiv.org/pdf/1906.00446.pdf#page=3)
+*(Diagram to be added)*
 
 ## 🔑 Key Features
 - **Multi-Scale Codebooks:** Uses a hierarchical latent space with top-level codebooks for global features and bottom-level codebooks for fine-grained details.

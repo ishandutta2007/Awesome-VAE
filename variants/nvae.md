@@ -3,7 +3,7 @@
 NVAE is a state-of-the-art hierarchical VAE that leverages deep residual networks and advanced architectural optimizations to generate extremely high-quality continuous images.
 
 ## 🏗️ Architecture Diagram
-![NVAE Architecture Overview](https://www.researchgate.net/profile/Arash-Vahdat/publication/341234567/figure/fig2/AS:11431281234567168@1712640000000/The-whole-NVAE-architecture.png)
+![NVAE Architecture Overview](../assets/images/nvae.png)
 
 ## 🔑 Key Features
 - **Deep Hierarchy:** Uses a massive number of latent layers (e.g., 30+).

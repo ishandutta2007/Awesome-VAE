@@ -3,8 +3,7 @@
 $\beta$-TCVAE provides a way to achieve disentanglement by decomposing the evidence lower bound (ELBO) and specifically targeting the Total Correlation term without an auxiliary discriminator.
 
 ## 🏗️ Architecture Diagram
-*(Diagram available in the research paper below)*
-> [View Diagram in Paper (Figure 1)](https://arxiv.org/pdf/1802.04942.pdf#page=4)
+*(Diagram to be added)*
 
 ## 🔑 Key Features
 - **ELBO Decomposition:** Mathematically breaks down the standard KL term into three components: Index-Code MI, Total Correlation, and Dimension-wise KL.

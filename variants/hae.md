@@ -3,7 +3,7 @@
 Hierarchical VAEs use multiple layers of latent variables to capture data features at different levels of abstraction, from global structure to fine-grained details.
 
 ## 🏗️ Architecture Diagram
-![Hierarchical VAE Diagrams](https://www.researchgate.net/profile/Shuangxi-Chen/publication/379644444/figure/fig2/AS:11431281234567168@1712640000000/Diagrams-that-schematically-represents-Hierarchical-VAE.png)
+*(Diagram to be added)*
 
 ## 🔑 Key Features
 - **Layered Representation:** Stacks multiple latent layers, where each layer is conditioned on the previous one.

@@ -3,7 +3,7 @@
 The Gumbel-Softmax VAE uses the Gumbel-Softmax distribution (also known as the Concrete distribution) to allow for backpropagation through categorical latent variables.
 
 ## 🏗️ Architecture Diagram
-![Gumbel-Softmax VAE Structure](https://www.researchgate.net/profile/Zhongmei-Yao/publication/361234567/figure/fig1/AS:11431281234567168@1712640000000/Structure-of-the-Gumbel-Softmax-VAE.png)
+![Gumbel-Softmax Reparameterization](../assets/images/reparameterization.png)
 
 ## 🔑 Key Features
 - **Categorical Reparameterization:** Provides a continuous relaxation of discrete random variables.

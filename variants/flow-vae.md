@@ -3,7 +3,7 @@
 Normalizing Flow VAEs combine the VAE framework with Normalizing Flows to transform a simple latent distribution (like a Gaussian) into a highly complex and expressive one.
 
 ## 🏗️ Architecture Diagram
-![Normalizing Flow Model Architecture](https://www.researchgate.net/profile/Callihan-Bertley/publication/381234567/figure/fig3/AS:11431281234567168@1712640000000/Normalizing-flow-model-architecture.png)
+*(Diagram to be added)*
 
 ## 🔑 Key Features
 - **Invertible Transformations:** Passes the latent variable through a sequence of invertible mathematical functions.
